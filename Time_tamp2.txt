@@ -1,0 +1,13 @@
+user_given_val = int(input('Please Enter Any Integer'))
+
+Time_tamp = [3600, 60, 1]
+
+Ans = []
+
+for i in Time_tamp:
+    quotient = int(user_given_val / i)
+    Ans.append(quotient)
+    remainder = user_given_val % i
+    user_given_val = remainder
+
+print(f'{Ans[0]}:{Ans[1]}:{Ans[2]}')
